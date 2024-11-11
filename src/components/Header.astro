@@ -1,5 +1,27 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo_hvid.svg";
 ---
-<div>
-Header - tilføj navigation mm.
-</div>
+<header class="bg-[#292621]">
+    <div class=" flex place-content-between px-5 pt-5 py-5">
+<Image class="max-w-24" src={logo} alt="Logo" />
+        <ul class="flex space-x-5 px-5 text-white">
+        <li>
+            <a href="#">
+            menupunkt
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            menupunkt
+            </a>
+        </li>
+        <li>
+            <a href="#">
+            menupunkt
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</header>
