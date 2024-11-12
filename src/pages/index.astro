@@ -1,13 +1,17 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import lillaC from "../assets/images/c_lilla.svg";
 import lillaH from "../assets/images/lilla_h.svg";
 import lillaA from "../assets/images/lilla_a.svg";
 import lillaR from "../assets/images/lilla_r.svg";
 import lillaM from "../assets/images/lilla_m.svg";
+import lillaBubble from "../assets/images/bubble_lilla.svg";
+import lillaCharm from "../assets/images/lilla_charm.svg";
+import charmProdukter from "../assets/images/charm_produkter2.png";
+import rGrafik from "../assets/images/r_grafik3.svg";
+import plakat1 from "../assets/images/plakat1.jpg";
+import plakat2 from "../assets/images/anikko_a.png";
 ---
 
 <MainLayout title="Titel">
@@ -20,13 +24,35 @@ import lillaM from "../assets/images/lilla_m.svg";
     <Image src={lillaM} alt="" class="col-start-8 row-start-2 col-span-3 row-span-2 h-[300px] w-auto" />
   </section>
   <!-- Om fonten -->
-  <section class="bg-[#F5EDE2] grid grid-cols-2">
-    <div>
-      <h1 class="text-[80px]">Charm af Victoria</h1>
-      <p class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facilis unde dicta alias sed commodi dignissimos accusantium ipsa sunt quos quia consequatur repudiandae, blanditiis debitis corrupti rem. Architecto, optio repudiandae!</p>
+  <section class="bg-[#F5EDE2] flex flex-row items-center gap-10 px-10 py-20 text-[#292621]" id="om">
+    <div class="w-full">
+      <h1 class="text-[100px] font-nats font-bold leading-[80px]">CHARM</h1>
+      <h2 class="text-[30px] font-nats font-bold pt-5">AF VICTORIA</h2>
+      <p class="font-nats font-light text-[23px]">Oplev en detaljerig og kunstnerisk displayfont, skabt til at give dine projekter et sofistikeret og iøjnefaldende udtryk. Denne font er ikke kun designet til at imponere i store overskrifter, men hver karakter fungerer også som et selvstændigt kunstværk, der kan tilføre ekstra dimension og dybde til dine visuelle projekter. Med dens unikke linjer og detaljerede former får du en alsidig font, der både kan bruges til at skabe et dramatisk og ekspressivt look eller som subtile, dekorative elementer i designet.
+</p>
+<p class="font-nats font-light text-[23px] pt-3">
+Fonten er ideel til projekter, der kræver en visuel kant – fra kreative plakater, stilfuld emballage, branding, og meget mere. Lad dens udtryk blive en del af din visuelle identitet og løft dine designs til et nyt niveau. Udforsk eksempler her på siden og lad dig inspirere til, hvordan fonten kan bruges til at skabe unikke, kunstneriske udtryk i både digitale og trykte medier.
+</p>    
+</div>
+    <div class="w-full flex flex-col items-center space-y-5">
+      <Image src={lillaBubble} alt="" class="" />
+      <Image src={lillaCharm} alt="" class="" />
     </div>
-    <div class="mx-auto">
-      <Image src={lillaC} alt="" class="col-start-1 row-start-1 col-span-2 row-span-2 h-[300px] w-auto" />
-    </div>
+  </section>
+  <!-- Til plakater -->
+  <section class="grid grid-cols-8 grid-rows-3 gap-5 bg-[#7790ED] py-10 px-10" id="plakater">
+    <Image src={plakat1} alt="" class="col-start-1 row-start-1 col-span-2 row-span-2" />
+    <Image src={plakat2} alt="" class="col-start-3 row-start-2 col-span-2 row-span-2 w-[500px]" />
+    <h2 class="mx-auto my-auto text-[#B4C7F2] text-[80px] font-nats font-bold col-start-6 row-start-2 col-span-2 leading-[70px] w-full">CHARM PÅ PLAKATER</h2>
+  </section>
+  <!-- Emballage -->
+  <section class="bg-[#B4C7F2] grid grid-cols-2 grid-rows-2 gap-5 py-10 px-10" id="emballage">
+    <h2 class="text-[#292621] text-[80px] font-nats font-bold leading-[70px] w-full col-start-1 row-start-2 col-span-2 row-span-2">CHARM PÅ EMBALLAGE</h2>
+    
+      <Image src={charmProdukter} alt="" class="w-full col-start-2 row-start-1 row-span-2" />
+    
+  </section>
+  <section>
+    <Image src={rGrafik} alt="" class="w-full" />
   </section>
 </MainLayout>

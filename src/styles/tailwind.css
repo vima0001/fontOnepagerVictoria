@@ -5,3 +5,13 @@
 @layer base{
 
 }
+/* src/styles/globals.css */
+@font-face {
+    font-family: 'NATS Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/NATS-Regular.ttf') format('truetype');}
+    
+    html {
+    scroll-behavior: smooth;
+}
